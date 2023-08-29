@@ -12,9 +12,9 @@ class MainController: UIViewController {
         self.viewModel = MainViewModel()
         
         super.init(nibName: nil, bundle: nil)
-        
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(EquipmentCell.self, forCellReuseIdentifier: "EquipmentCell")
-        tableView.backgroundColor = .clear
+        tableView.backgroundColor = .blue
         tableView.dataSource = self
     }
     
@@ -25,7 +25,7 @@ class MainController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel.equipmnentRequest()
+        view.backgroundColor = .yellow
         view.addSubview(tableView)
         
         setupContraints()
@@ -51,7 +51,8 @@ extension MainController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EquipmentCell", for: indexPath) as! EquipmentCell
         cell.backgroundColor = .clear
-        cell.configure(text: viewModel.itemAt(at: indexPath.row)?.day)
+        cell.configure(text: (viewModel.itemAt(at: indexPath.row)?.date)!)
+        return cell
     }
 }
 

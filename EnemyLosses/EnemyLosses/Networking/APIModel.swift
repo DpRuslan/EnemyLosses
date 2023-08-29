@@ -60,9 +60,9 @@ struct EquipmentCorrectionResponse: Decodable {
     var drone: Int
     var navalShip: Int
     var antiAircraftWarfare: Int
-    var specialEquipment: Int?
-    var vehiclesAndFuelTanks: Int?
-    var cruiseMissiles: Int?
+    var specialEquipment: Int
+    var vehiclesAndFuelTanks: Int
+    var cruiseMissiles: Int
     
     enum CodingKeys: String, CodingKey {
         case date
@@ -108,7 +108,7 @@ struct PersonnelResponse: Decodable {
     var day: Int
     var personnel: Int
     var personnelAbout: String
-    var POW: Int
+    var POW: Int?
     
     enum CodingKeys: String, CodingKey {
         case date
