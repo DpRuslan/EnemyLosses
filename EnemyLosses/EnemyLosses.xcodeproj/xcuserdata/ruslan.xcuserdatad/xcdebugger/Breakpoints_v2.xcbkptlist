@@ -3,4 +3,150 @@
    uuid = "0E3311F6-3571-49A9-9677-BB60B123E05A"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D18D2383-BA98-4D89-BD9F-DE13ED9FC9C1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnemyLosses/Resources/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "saveToCoreData(equipments:personnels:equipmentsCorrection:equipmentsOryx:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D18D2383-BA98-4D89-BD9F-DE13ED9FC9C1 - 358fadbb8bb459de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnemyLosses.AppDelegate.saveToCoreData(equipments: Swift.Array&lt;EnemyLosses.EquipmentResponse&gt;, personnels: Swift.Array&lt;EnemyLosses.PersonnelResponse&gt;, equipmentsCorrection: Swift.Array&lt;EnemyLosses.EquipmentCorrectionResponse&gt;, equipmentsOryx: Swift.Array&lt;EnemyLosses.EquipmentOryxResponse&gt;) -&gt; ()"
+                  moduleName = "EnemyLosses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruslan/Desktop/MacPaw/EnemyLosses/EnemyLosses/EnemyLosses/Resources/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "2600">
+               </Location>
+               <Location
+                  uuid = "D18D2383-BA98-4D89-BD9F-DE13ED9FC9C1 - a8a541d7dd468f32"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #4 (Swift.Int) -&gt; Swift.Int64 in EnemyLosses.AppDelegate.saveToCoreData(equipments: Swift.Array&lt;EnemyLosses.EquipmentResponse&gt;, personnels: Swift.Array&lt;EnemyLosses.PersonnelResponse&gt;, equipmentsCorrection: Swift.Array&lt;EnemyLosses.EquipmentCorrectionResponse&gt;, equipmentsOryx: Swift.Array&lt;EnemyLosses.EquipmentOryxResponse&gt;) -&gt; ()"
+                  moduleName = "EnemyLosses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruslan/Desktop/MacPaw/EnemyLosses/EnemyLosses/EnemyLosses/Resources/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB30E3C6-2A69-4FF9-BA51-A41D11969545"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnemyLosses/Resources/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
+            landmarkName = "assignIfNotNil(_:to:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38C89F1F-58F0-453D-BC48-12FDB450455E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnemyLosses/Resources/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
+            landmarkName = "assignIfNotNil(_:to:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C3C2157-1860-4CE4-83FD-0DD289130E86"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnemyLosses/Resources/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
+            landmarkName = "assignIfNotNil(_:to:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8375DB91-C568-4AD5-9CD1-E9C1E6964881"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnemyLosses/Resources/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "saveToCoreData(equipments:personnels:equipmentsCorrection:equipmentsOryx:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8375DB91-C568-4AD5-9CD1-E9C1E6964881 - 358fadbb8bb45931"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnemyLosses.AppDelegate.saveToCoreData(equipments: Swift.Array&lt;EnemyLosses.EquipmentResponse&gt;, personnels: Swift.Array&lt;EnemyLosses.PersonnelResponse&gt;, equipmentsCorrection: Swift.Array&lt;EnemyLosses.EquipmentCorrectionResponse&gt;, equipmentsOryx: Swift.Array&lt;EnemyLosses.EquipmentOryxResponse&gt;) -&gt; ()"
+                  moduleName = "EnemyLosses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruslan/Desktop/MacPaw/EnemyLosses/EnemyLosses/EnemyLosses/Resources/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "176"
+                  endingLineNumber = "176"
+                  offsetFromSymbolStart = "2788">
+               </Location>
+               <Location
+                  uuid = "8375DB91-C568-4AD5-9CD1-E9C1E6964881 - e77d6d498ff03cd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #5 (Swift.Int) -&gt; Swift.Int64 in EnemyLosses.AppDelegate.saveToCoreData(equipments: Swift.Array&lt;EnemyLosses.EquipmentResponse&gt;, personnels: Swift.Array&lt;EnemyLosses.PersonnelResponse&gt;, equipmentsCorrection: Swift.Array&lt;EnemyLosses.EquipmentCorrectionResponse&gt;, equipmentsOryx: Swift.Array&lt;EnemyLosses.EquipmentOryxResponse&gt;) -&gt; ()"
+                  moduleName = "EnemyLosses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruslan/Desktop/MacPaw/EnemyLosses/EnemyLosses/EnemyLosses/Resources/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "176"
+                  endingLineNumber = "176"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

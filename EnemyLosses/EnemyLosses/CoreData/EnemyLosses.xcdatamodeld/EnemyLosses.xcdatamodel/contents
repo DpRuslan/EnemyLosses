@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Equipment" representedClassName="Equipment" syncable="YES" codeGenerationType="class">
+    <entity name="Equipment" representedClassName="Equipment" syncable="YES">
         <attribute name="aircraft" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="antiAircraftWarfare" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="apc" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
@@ -19,7 +19,7 @@
         <attribute name="tank" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="vehiclesAndFuelTanks" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
-    <entity name="EquipmentCorrection" representedClassName="EquipmentCorrection" syncable="YES" codeGenerationType="class">
+    <entity name="EquipmentCorrection" representedClassName="EquipmentCorrection" syncable="YES">
         <attribute name="aircraft" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="antiAircraftWarfare" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="apc" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
@@ -35,14 +35,14 @@
         <attribute name="tank" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="vehiclesAndFuelTanks" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
-    <entity name="EquipmentOryx" representedClassName="EquipmentOryx" syncable="YES" codeGenerationType="class">
+    <entity name="EquipmentOryx" representedClassName="EquipmentOryx" syncable="YES">
         <attribute name="equipmentOryx" optional="YES" attributeType="String"/>
         <attribute name="equipmentUA" optional="YES" attributeType="String"/>
         <attribute name="lossesTotal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="manufacturer" optional="YES" attributeType="String"/>
         <attribute name="model" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="Personnel" representedClassName="Personnel" syncable="YES" codeGenerationType="class">
+    <entity name="Personnel" representedClassName="Personnel" syncable="YES">
         <attribute name="date" optional="YES" attributeType="String"/>
         <attribute name="day" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="personnel" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
