@@ -26,6 +26,7 @@ extension LoadingCoordinator: LoadingCoordinatorProtocol {
     func detaiVC(id: NSManagedObjectID) {
         let vc = DetailController()
         vc.viewModel.id = id
-        navigationController?.present(vc, animated: true)
+        let navigationController = UINavigationController(rootViewController: vc)
+        self.navigationController?.present(navigationController, animated: true)
     }
 }

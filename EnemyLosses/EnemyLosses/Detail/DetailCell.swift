@@ -47,6 +47,7 @@ extension DetailCell {
         titleLabel.font = .systemFont(ofSize: 16)
         
         valueLabel.text = valueText
+        valueLabel.textAlignment = .right
         valueLabel.textColor = .black
         valueLabel.numberOfLines = 0
         valueLabel.font = .systemFont(ofSize: 16)

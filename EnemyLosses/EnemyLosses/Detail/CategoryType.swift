@@ -152,18 +152,3 @@ extension CategoryType.CellType {
         }
     }
 }
-//
-//extension CategoryType {
-//    var cellTypes: [CellType] {
-//        switch self {
-//        case .equipment:
-//            return [.date, .day, .aircraft, .helicopter, .tank, .APC, .fieldArtillery, .MRL, .fuelTank, .drone, .navalShip, .antiAirCraftWarfare, .specialEquipment, .vehiclesAndFuelTanks, .cruiseMissiles, .greatestLossesDirection]
-//        case .equipmentCorrection:
-//            return [.date, .day, .aircraft, .helicopter, .tank, .APC, .fieldArtillery, .MRL, .drone, .navalShip, .antiAirCraftWarfare, .specialEquipment, .vehiclesAndFuelTanks, .cruiseMissiles]
-//        case .equipmentOryx:
-//            return [.equipmentOryx, .model, .manufacturer, .lossesTotal, .equipmentUA]
-//        case .personnel:
-//            return [.date, .day, .personnel, .personnelAbout, .POW]
-//        }
-//    }
-//}

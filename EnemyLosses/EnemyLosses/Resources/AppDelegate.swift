@@ -12,7 +12,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var coordinator: LoadingCoordinator?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         
         if checkForEmptyCoreData() {
@@ -52,6 +51,8 @@ extension AppDelegate {
         var personnels: [PersonnelResponse] = []
         var equipmentsOryx: [EquipmentOryxResponse] = []
         var equipmentsCorrection: [EquipmentCorrectionResponse] = []
+        var hasError = false
+        var customError: CustomError?
         
         let dispatchGroup = DispatchGroup()
         
@@ -69,7 +70,8 @@ extension AppDelegate {
                     print("Error decoding - \(error)")
                 }
             case .failure(let error):
-                print("Error - \(error.localizedDescription)")
+                customError = error
+                hasError = true
             }
         }
         
@@ -87,7 +89,8 @@ extension AppDelegate {
                     print("Error decoding - \(error)")
                 }
             case .failure(let error):
-                print("Error - \(error.localizedDescription)")
+                customError = error
+                hasError = true
             }
         }
         
@@ -105,7 +108,8 @@ extension AppDelegate {
                     print("Error decoding - \(error)")
                 }
             case .failure(let error):
-                print("Error - \(error.localizedDescription)")
+                customError = error
+                hasError = true
             }
         }
         
@@ -123,13 +127,18 @@ extension AppDelegate {
                     print("Error decoding - \(error)")
                 }
             case .failure(let error):
-                print("Error - \(error.localizedDescription)")
+                customError = error
+                hasError = true
             }
         }
         
         dispatchGroup.notify(queue: .main) {
-            self.saveToCoreData(equipments: equipments, personnels: personnels, equipmentsCorrection: equipmentsCorrection, equipmentsOryx: equipmentsOryx)
-            self.dataIsReady()
+            if hasError {
+                self.errorAlert(message: customError!.localizedDescription)
+            } else {
+                self.saveToCoreData(equipments: equipments, personnels: personnels, equipmentsCorrection: equipmentsCorrection, equipmentsOryx: equipmentsOryx)
+                self.dataIsReady()
+            }
         }
     }
 }
@@ -224,10 +233,19 @@ extension AppDelegate {
             property = value
         }
     }
+    
+    private func errorAlert(message: String) {
+        DispatchQueue.main.async {
+            if let rootViewController = self.window?.rootViewController {
+                let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Ok", style: .default) { _ in
+                    alertController.dismiss(animated: true) {
+                        self.dataIsReady()
+                    }
+                })
+                
+                rootViewController.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
 }
-
-
-
-
-
-

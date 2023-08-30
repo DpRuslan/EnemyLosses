@@ -24,8 +24,11 @@ class DetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .lightGray
+        self.view.backgroundColor = .white
         
+        let backButton = UIBarButtonItem(title: "Close", style: .done, target: self, action: #selector(backButtonTapped))
+        self.navigationItem.leftBarButtonItem = backButton
+    
         viewModel.findCategoryType()
         view.addSubview(tableView)
         setupConstraints()
@@ -63,5 +66,11 @@ extension DetailController: UITableViewDataSource {
         cell.selectionStyle = .none
         cell.configure(titleText: viewModel.itemTitleAt(at: indexPath.row), valueText: viewModel.itemValueAt(at: indexPath.row))
         return cell
+    }
+}
+
+extension DetailController {
+    @objc private func backButtonTapped() {
+        dismiss(animated: true, completion: nil)
     }
 }

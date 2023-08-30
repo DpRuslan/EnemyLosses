@@ -61,6 +61,7 @@ final class DetailViewModel {
                 .vehiclesAndFuelTanks(value: "\(equipmentCorrection.vehiclesAndFuelTanks)"),
                 .cruiseMissiles(value: "\(equipmentCorrection.cruiseMissiles)")
             ]
+            
         case let personnel as Personnel:
             categoryType = .personnel
             dataSource = [
@@ -70,6 +71,7 @@ final class DetailViewModel {
                 .personnelAbout(value: personnel.personnelAbout ?? "None"),
                 .POW(value: "\(personnel.pow)")
             ]
+            
         default:
             break
         }
@@ -86,6 +88,4 @@ final class DetailViewModel {
     func itemTitleAt(at index: Int) -> String {
         dataSource[index].title
     }
-    
-    
 }

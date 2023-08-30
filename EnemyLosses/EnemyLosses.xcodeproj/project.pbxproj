@@ -115,6 +115,7 @@
 				446D8E3C2A9CED9600BD8DD8 /* Coordinators */,
 				446D8E342A9CEC5300BD8DD8 /* Extension */,
 				446D8E312A9CEB9700BD8DD8 /* Networking */,
+				44842FE22A9F8B670074A69E /* Loading */,
 				446D8E392A9CED6600BD8DD8 /* Main */,
 				446D8E7E2A9F39C500BD8DD8 /* Detail */,
 				446D8E252A9CEB1500BD8DD8 /* Assets.xcassets */,
@@ -128,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				446D8E1C2A9CEB1400BD8DD8 /* AppDelegate.swift */,
-				446D8E6A2A9DE6B300BD8DD8 /* LoadingController.swift */,
 				446D8E1E2A9CEB1400BD8DD8 /* SceneDelegate.swift */,
 			);
 			path = Resources;
@@ -226,6 +226,14 @@
 				44842FD82A9F820D0074A69E /* EquipmentCorrection+CoreDataProperties.swift */,
 			);
 			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		44842FE22A9F8B670074A69E /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				446D8E6A2A9DE6B300BD8DD8 /* LoadingController.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
